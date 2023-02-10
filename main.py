@@ -32,9 +32,7 @@ def looper():
             pass
 
         if max_price and act_price and max_price - act_price >= one_p:
-            print(f"max: {max_price}, act_price: {act_price}, 1%: {one_p}")
             print (f'[INFO] актуальная цена ниже максимальной на {"{:.2f}".format((max_price - act_price) / one_p)}%')
 
 if __name__ == "__main__":
     looper()
-    
